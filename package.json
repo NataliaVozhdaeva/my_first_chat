@@ -60,7 +60,7 @@
     "prettier": "^2.4.1"
   },
   "lint-staged": {
-    "*.tsx": [
+    "*.(tsx)": [
       "node_modules/.bin/eslint --max-warnings=0 src/",
       "prettier --write"
     ]
