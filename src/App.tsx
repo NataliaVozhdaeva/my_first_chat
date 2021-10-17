@@ -7,6 +7,7 @@ function App() {
     <div>
       <div className="App">Learn React</div>
       <div className="App">Learn React</div>
+      <div className="App">Learn React</div>
     </div>
   )
 }
