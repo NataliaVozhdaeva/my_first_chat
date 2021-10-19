@@ -1,4 +1,12 @@
-.App {
+body {
+  padding: 30px;
+}
+
+
+
+
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +44,4 @@
     transform: rotate(360deg);
   }
 }
+*/

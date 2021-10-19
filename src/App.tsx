@@ -1,13 +1,11 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
+import RegisterBlock from './molecules/atoms/registerBlock'
 
 function App() {
   return (
     <div>
-      <div className="App">Learn React</div>
-      <div className="App">Learn React</div>
-      <div className="App">Learn React</div>
+      <RegisterBlock />
     </div>
   )
 }
