@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 import './registerBlock.scss'
+import './buttonStyle.scss'
 
 type formValues = {
   userName: string,
@@ -28,7 +29,7 @@ function RegisterBlock(): JSX.Element {
         className={`inputField ${errors.userName ? 'error' : ''}`}
         placeholder={'Input user name'}
         {...register('userName', {
-          validate: (value) => value.length > 3, //тестовый для простоты
+          pattern: /(\b[A-Z][a-z]+)/g,
         })}
       />
       {errors.userName && <p className="errorMessage"> Something goes wrong </p>}
