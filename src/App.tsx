@@ -1,13 +1,9 @@
 import React from 'react'
 import './App.css'
-import RegisterBlock from './molecules/atoms/registerBlock'
+import RegisterBlock from './molecules/atoms/registerBlock/registerBlock'
 
 function App() {
-  return (
-    <div>
-      <RegisterBlock />
-    </div>
-  )
+  return <RegisterBlock />
 }
 
 export default App

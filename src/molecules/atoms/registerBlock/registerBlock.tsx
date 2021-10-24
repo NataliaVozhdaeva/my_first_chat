@@ -2,11 +2,11 @@ import React from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 import './registerBlock.scss'
-import './buttonStyle.scss'
+import '../button/buttonStyle.scss'
 
 type formValues = {
   userName: string,
-  password: string | number,
+  password: string,
 }
 
 function RegisterBlock(): JSX.Element {
@@ -19,11 +19,12 @@ function RegisterBlock(): JSX.Element {
 
   return (
     <form
+      id="registerForm"
       onSubmit={handleSubmit((data) => {
         console.log(data)
       })}>
       <label htmlFor="userName">User name</label>
-      <br></br>
+      <br />
       <input
         id="userName"
         className={`inputField ${errors.userName ? 'error' : ''}`}
@@ -33,19 +34,19 @@ function RegisterBlock(): JSX.Element {
         })}
       />
       {errors.userName && <p className="errorMessage"> Something goes wrong </p>}
-      <p></p>
-
+      <br />
       <label htmlFor="password">Password</label>
-      <br></br>
+      <br />
       {errors.password && <p className="errorMessage"> Please, complete </p>}
       <input
         id="password"
         className={`inputField ${errors.password ? 'error' : ''}`}
         {...register('password', { required: true })}
       />
-      <p></p>
-
-      <input className="button" type="submit" value="Log In" />
+      <br />
+      <button form="registerForm" className="button" type="submit">
+        Log In
+      </button>
     </form>
   )
 }
