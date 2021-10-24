@@ -14,6 +14,13 @@
     font-size: 15px;
     color: #333;
     margin-top: 4px;
+
+     &:focus {
+      outline:none;
+      border-color: #5c98f1;
+      color: #333;
+    }
+    
 }
 
 .label {
@@ -26,11 +33,7 @@
     margin-top: 32px;
   }
   
-  .typing {
-    border-color: #5c98f1;
-    color: #333;
-  }
-  
+ 
   .error {
     border-color: #fb6262;
     background: url("345.png") no-repeat center right 16px;
