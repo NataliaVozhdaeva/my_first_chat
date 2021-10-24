@@ -23,8 +23,10 @@ function RegisterBlock(): JSX.Element {
       onSubmit={handleSubmit((data) => {
         console.log(data)
       })}>
-      <label htmlFor="userName">User name</label>
-      <br />
+      <label htmlFor="userName" className="label">
+        User name
+      </label>
+      <br /> {/*для переноса следующего элемента на следующую строку*/}
       <input
         id="userName"
         className={`inputField ${errors.userName ? 'error' : ''}`}
@@ -35,7 +37,9 @@ function RegisterBlock(): JSX.Element {
       />
       {errors.userName && <p className="errorMessage"> Something goes wrong </p>}
       <br />
-      <label htmlFor="password">Password</label>
+      <label htmlFor="password" className="label">
+        Password
+      </label>
       <br />
       {errors.password && <p className="errorMessage"> Please, complete </p>}
       <input
@@ -45,6 +49,9 @@ function RegisterBlock(): JSX.Element {
       />
       <br />
       <button form="registerForm" className="button" type="submit">
+        {' '}
+        {/*Делала инпутом, чтобы наследовать часть стилей от других инпутов... 
+        Сабмитить им, вроде, тоже можно, а расширенный функционал button тут, вроде, не нужен*/}
         Log In
       </button>
     </form>

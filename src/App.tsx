@@ -1,9 +1,9 @@
 import React from 'react'
-import './App.css'
-import RegisterBlock from './molecules/atoms/registerBlock/registerBlock'
+import './App.scss'
+import TypographyBlock from './molecules/form+typografy/form+typografy'
 
 function App() {
-  return <RegisterBlock />
+  return <TypographyBlock />
 }
 
 export default App

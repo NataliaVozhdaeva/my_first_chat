@@ -1,7 +1,12 @@
 import React from 'react'
 
 function SubmitBatton(): JSX.Element {
-  return <input type="submit" value="Log In" />
+  return (
+    <button form="registerForm" className="button" type="submit">
+      {' '}
+      Log In
+    </button>
+  )
 }
 
 export default SubmitBatton

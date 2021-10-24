@@ -1,3 +1,7 @@
+#registerForm{
+  width: 50vw;
+}
+
 .inputField{
     width: 354px;
     height: 56px;
@@ -10,15 +14,16 @@
     font-size: 15px;
     color: #333;
     margin-top: 4px;
-    margin-bottom: 32px;
 }
 
 .label {
+    display:inline-block;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 19px;
+    margin-top: 32px;
   }
   
   .typing {
